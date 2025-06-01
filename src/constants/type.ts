@@ -1,22 +1,22 @@
 export const TokenType = {
-  ForgotPasswordToken: "ForgotPasswordToken",
-  AccessToken: "AccessToken",
-  RefreshToken: "RefreshToken",
-  TableToken: "TableToken",
+  ForgotPasswordToken: 'ForgotPasswordToken',
+  AccessToken: 'AccessToken',
+  RefreshToken: 'RefreshToken',
+  TableToken: 'TableToken',
 } as const;
 
 export const Role = {
-  Owner: "Owner",
-  Employee: "Employee",
-  Guest: "Guest",
+  Owner: 'Owner',
+  Employee: 'Employee',
+  Guest: 'Guest',
 } as const;
 
 export const RoleValues = [Role.Owner, Role.Employee, Role.Guest] as const;
 
 export const DishStatus = {
-  Available: "Available",
-  Unavailable: "Unavailable",
-  Hidden: "Hidden",
+  Available: 'Available',
+  Unavailable: 'Unavailable',
+  Hidden: 'Hidden',
 } as const;
 
 export const DishStatusValues = [
@@ -26,9 +26,9 @@ export const DishStatusValues = [
 ] as const;
 
 export const TableStatus = {
-  Available: "Available",
-  Hidden: "Hidden",
-  Reserved: "Reserved",
+  Available: 'Available',
+  Hidden: 'Hidden',
+  Reserved: 'Reserved',
 } as const;
 
 export const TableStatusValues = [
@@ -38,11 +38,11 @@ export const TableStatusValues = [
 ] as const;
 
 export const OrderStatus = {
-  Pending: "Pending",
-  Processing: "Processing",
-  Rejected: "Rejected",
-  Delivered: "Delivered",
-  Paid: "Paid",
+  Pending: 'Pending',
+  Processing: 'Processing',
+  Rejected: 'Rejected',
+  Delivered: 'Delivered',
+  Paid: 'Paid',
 } as const;
 
 export const OrderStatusValues = [
@@ -53,4 +53,4 @@ export const OrderStatusValues = [
   OrderStatus.Paid,
 ] as const;
 
-export const ManagerRoom = "manager" as const;
+export const ManagerRoom = 'manager' as const;

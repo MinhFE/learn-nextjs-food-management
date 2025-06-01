@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from 'zod';
 
 const configSchema = z.object({
   NEXT_PUBLIC_API_ENDPOINT: z.string(),
@@ -12,7 +12,7 @@ const configProject = configSchema.safeParse({
 
 if (!configProject.success) {
   console.log(configProject.error.errors);
-  throw Error("Invalid environment variable declaration");
+  throw Error('Invalid environment variable declaration');
 }
 
 const envConfig = configProject.data;
